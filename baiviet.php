@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<?php include_once 'navbar.php'; ?>
+			
 			
 			<div class="card mt-3">
 				<h5 class="card-header">Bài viết</h5>
