@@ -46,7 +46,7 @@
 								{
 									echo '<tr>';
 										echo '<td>' . $stt++ . '</td>';
-										echo '<td>' . $value['HoVaTen'] . '</td>';
+									
 										echo '<td>' . $value['TenChuDe'] . '</td>';
 										echo '<td>' . $value['TieuDe'] . '</td>';
 										echo '<td>' . $value['NgayDang'] . '</td>';
