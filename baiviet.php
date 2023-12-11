@@ -29,8 +29,7 @@
 								<th width="40%">Tiêu đề</th>
 								<th width="15%">Ngày đăng</th>
 								<th width="5%" title="Tình trạng kiểm duyệt">D?</th>
-								<th width="5%">Sửa</th>
-								<th width="5%">Xóa</th>
+								
 							</tr>
 						</thead>
 						<tbody>
