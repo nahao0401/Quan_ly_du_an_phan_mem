@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('binhluanbaiviet', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->foreignId('baiviet_id')->constrained('baiviet');
+            $table->foreignId('user_id')->constrained('users');
+            $table->text('noidungbinhluan');
+            $table->unsignedTinyInteger('kiemduyet')->default(0);
+            $table->unsignedTinyInteger('kichhoat')->default(1);
             $table->timestamps();
             $table->engine = 'InnoDB';
         });
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('binhluanbaiviet');
     }
 };
